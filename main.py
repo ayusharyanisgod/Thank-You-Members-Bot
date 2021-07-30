@@ -41,7 +41,7 @@ ABOUT = """
 """
 HELP = """
 ● Still Wonder How I Work ? 
-● Use /How get a Full Brief
+● Use /help get a Full Brief on How i Works.
 
 """
 
