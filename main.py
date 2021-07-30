@@ -67,16 +67,13 @@ START_BUTTON = InlineKeyboardMarkup(
         InlineKeyboardButton('ABOUT',callback_data='cbabout'),
         InlineKeyboardButton('HELP',callback_data='cbhelp')
         ],
-        [
-        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/PremiumValleyUpdates'),
-        ],
-        [InlineKeyboardButton('↗ ADD ME TO A GROUP ↗', url="t.me/ThanksMembers_Bot?startgroup=true")
+        [InlineKeyboardButton('➕ ADD ME TO A GROUP ➕', url="t.me/ThanksMembers_Bot?startgroup=true")
         ]]
         
     )
 CLOSE_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Back',callback_data='cbclose'),
+        InlineKeyboardButton('🔙 Back',callback_data='cbclose'),
         ]]
     )
 
