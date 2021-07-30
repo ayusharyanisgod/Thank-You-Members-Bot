@@ -1,4 +1,4 @@
-# member-sticker-bot
+# Thank You Members Bot
 
 A telegram bot Which sends Thank You Sticker to Members in channel and Group at specific member count
 
