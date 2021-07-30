@@ -58,7 +58,12 @@ ADDME_BUTTON = InlineKeyboardMarkup(
         ]]
     )
 START_BUTTON = InlineKeyboardMarkup(
+    
         [[
+        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/PremiumValleyUpdates'),
+        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/PremiumValleySupport')
+        ],
+        [
         InlineKeyboardButton('ABOUT',callback_data='cbabout'),
         InlineKeyboardButton('HELP',callback_data='cbhelp')
         ],
