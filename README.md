@@ -1,5 +1,7 @@
 # Thank You Members Bot
 
+[Heroku](https://heroku.com/deploy?template=https://github.com/ayusharyanisgod/Thank-You-Members-Bot)
+
 A telegram bot Which sends Thank You Sticker to Members in channel and Group at specific member count
 
 <center>
