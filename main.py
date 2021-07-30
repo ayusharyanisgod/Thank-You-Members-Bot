@@ -52,7 +52,7 @@ CHANNEL_BUTTON = InlineKeyboardMarkup(
     )
 ADDME_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('↗ ADD ME TO A GROUP ↗', url="t.me/member_sticker_bot?startgroup=true")
+        InlineKeyboardButton('↗ ADD ME TO A GROUP ↗', url="t.me/ThanksMembers_Bot?startgroup=true")
         ]]
     )
 START_BUTTON = InlineKeyboardMarkup(
@@ -63,7 +63,7 @@ START_BUTTON = InlineKeyboardMarkup(
         [
         InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/PremiumValleyUpdates'),
         ],
-        [InlineKeyboardButton('↗ ADD ME TO A GROUP ↗', url="t.me/member_sticker_bot?startgroup=true")
+        [InlineKeyboardButton('↗ ADD ME TO A GROUP ↗', url="t.me/ThanksMembers_Bot?startgroup=true")
         ]]
         
     )
@@ -106,7 +106,7 @@ async def start_private(bot, update):
         quote=True
     )
 
-@bughunter0.on_message((filters.command(["start"]) & filters.group) | filters.regex("/start@member_sticker_bot"))
+@bughunter0.on_message((filters.command(["start"]) & filters.group) | filters.regex("/start@ThanksMembers_Bot"))
 async def start_group(bot, update):
     text = START_STRING_GROUP.format(update.chat.title)
     reply_markup = CHANNEL_BUTTON
