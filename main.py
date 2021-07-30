@@ -48,7 +48,8 @@ HELP = """
 
 CHANNEL_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/PremiumValleyUpdates')
+        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/PremiumValleyUpdates'),
+        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/PremiumValleySupport')
         ]]
     )
 ADDME_BUTTON = InlineKeyboardMarkup(
