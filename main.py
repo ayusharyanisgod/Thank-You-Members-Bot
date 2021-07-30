@@ -16,12 +16,13 @@ bughunter0 = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-START_STRING_PRIVATE = """ Hi {}, I'm Member Sticker Bot. 
- I Can Send Relevant Thankyou Sticker in Groups and Channel
+START_STRING_PRIVATE = """ Hi {},
+I'm Member Sticker Bot. 
+I Can Send Relevant Thankyou Sticker in Groups and Channel
 \n All Member count doesn't return a sticker, so I will send a Thank you message for the count which have no sticker,
-This message will be deleted after 10 second. \n
+😎 This message will be deleted after 10 second. \n
 Nothing to Do here !! 😕
-**ADD ME TO A GROUP THEN TRIGGER ME**
+🥺 **ADD ME TO A GROUP THEN TRIGGER ME**
 """
 
 START_STRING_GROUP = """ **I need Admin rights to Send sticker in {}**
@@ -32,11 +33,9 @@ START_STRING_GROUP = """ **I need Admin rights to Send sticker in {}**
 
 ABOUT = """
 ● **BOT:** `Member Sticker BOT` 
-● **AUTHOR :** [bughunter0](https://t.me/bughunter0) 
 ● **SERVER :** `Heroku` 
 ● **LIBRARY :** `Pyrogram` 
 ● **LANGUAGE :** `Python 3.9` 
-● **SOURCE :** [BugHunterBots](https://t.me/BugHunterBots/93) 
 
 """
 HELP = """
@@ -48,7 +47,7 @@ HELP = """
 
 CHANNEL_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/BughunterBots')
+        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/PremiumValleyUpdates')
         ]]
     )
 ADDME_BUTTON = InlineKeyboardMarkup(
@@ -62,7 +61,7 @@ START_BUTTON = InlineKeyboardMarkup(
         InlineKeyboardButton('HELP',callback_data='cbhelp')
         ],
         [
-        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/BughunterBots'),
+        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/PremiumValleyUpdates'),
         ],
         [InlineKeyboardButton('↗ ADD ME TO A GROUP ↗', url="t.me/member_sticker_bot?startgroup=true")
         ]]
