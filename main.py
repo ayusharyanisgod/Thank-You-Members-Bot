@@ -134,7 +134,7 @@ async def sticker_group(bot, message):
    try:
       chat_id = int(message.chat.id)
       count = await bughunter0.get_chat_members_count(chat_id)
-      if count == 3:
+      if count == 25:
                     await bot.send_sticker(chat_id,"CAACAgEAAxkBAALAcWDbNvSOrJU6oRg29s6IYp0zT04PAAJ1AgACb8FkFDCUuHcEvpgrIAQ")
       elif count == 50:
                     await bot.send_sticker(chat_id,"CAACAgEAAxkBAAIED2DbUA8YaVbYncLCyKBD80VrysOgAAJ2AgACb8FkFMQhQH7icivgHgQ")
