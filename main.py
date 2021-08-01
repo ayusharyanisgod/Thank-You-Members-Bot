@@ -32,6 +32,18 @@ START_STRING_GROUP = """ **I need Admin rights to Send sticker in {}**
 
 """
 
+REPORT_STRING_PRIVATE = """ Hi {},
+●I am Currently using [this](https://t.me/addstickers/DownloadStics_ThankYouMembers) sticker pack, if found another pack report it here @MasterAyushAryan_Bot with sticker.
+
+we will try to remove it.
+"""
+
+REPORT_STRING_GROUP = """●I am Currently using [this](https://t.me/addstickers/DownloadStics_ThankYouMembers) sticker pack, if found another pack report it here @MasterAyushAryan_Bot with sticker.
+
+we will try to remove it.
+
+"""
+
 ABOUT = """
 ● **BOT:** `Member Sticker BOT` 
 ● **SERVER :** `Heroku` 
