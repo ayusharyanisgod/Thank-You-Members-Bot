@@ -43,6 +43,9 @@ HELP = """
 ● Still Wonder How I Work ? 
 ● Use /help get a Full Brief on How i Works.
 
+●I am Currently using [this](https://t.me/addstickers/DownloadStics_ThankYouMembers) sticker pack, if found another pack report it here @MasterAyushAryan_Bot with sticker.
+
+we will try to remove it.
 """
 
 
