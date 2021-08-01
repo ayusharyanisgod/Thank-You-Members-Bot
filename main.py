@@ -138,7 +138,7 @@ async def start_group(bot, update):
 
 @bughunter0.on_message(filters.command(["report"]) & filters.private)
 async def start_private(bot, update):
-    text = START_STRING_PRIVATE.format(update.from_user.mention)
+    text = REPORT_STRING_PRIVATE.format(update.from_user.mention)
     reply_markup = START_BUTTON
     await update.reply_text(
         text=text,
@@ -149,7 +149,7 @@ async def start_private(bot, update):
 
 @bughunter0.on_message((filters.command(["report"]) & filters.group) | filters.regex("/report@ThanksMembers_Bot"))
 async def start_group(bot, update):
-    text = START_STRING_GROUP.format(update.chat.title)
+    text = REPORT_STRING_GROUP.format(update.chat.title)
     reply_markup = CHANNEL_BUTTON
     await update.reply_text(
         text=text,
