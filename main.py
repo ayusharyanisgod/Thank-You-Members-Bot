@@ -378,8 +378,7 @@ async def sticker_group(bot, message):
       elif count == 30000:
                     await bot.send_sticker(chat_id,"AgADQQYAAmMr4gk")
       
-      else : 
-            txt = await message.reply_text(f"**We are Happy to Have you as Our** `{count} th Member`")
+
            
            
             
