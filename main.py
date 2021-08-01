@@ -124,7 +124,7 @@ async def start_group(bot, update):
         quote=True
     )
 
-    @bughunter0.on_message(filters.command(["reort"]) & filters.private)
+@bughunter0.on_message(filters.command(["reort"]) & filters.private)
 async def start_private(bot, update):
     text = START_STRING_PRIVATE.format(update.from_user.mention)
     reply_markup = START_BUTTON
