@@ -198,7 +198,7 @@ async def start_private(bot, update):
         quote=True
     )
 
-@bughunter0.on_message((filters.command(["donate"]) & filters.group) | filters.regex("/report@ThanksMembers_Bot"))
+@bughunter0.on_message((filters.command(["donate"]) & filters.group) | filters.regex("/donate@ThanksMembers_Bot"))
 async def start_group(bot, update):
     text = DONATE_STRING_GROUP.format(update.chat.title)
     reply_markup = DONATE_BUTTON
