@@ -44,6 +44,19 @@ we will try to remove it.
 
 """
 
+DONATE_STRING_PRIVATE = """ Hi,
+You can buy coffee for the developer or something else .
+
+DM Developer Here - @bughunter0
+"""
+
+DONATE_STRING_GROUP = """You can buy coffee for the developer or something else .
+
+DM Developer Here - @bughunter0
+
+"""
+
+
 ABOUT = """
 ● **BOT:** `Member Sticker BOT` 
 ● **SERVER :** `Heroku` 
@@ -86,6 +99,21 @@ START_BUTTON = InlineKeyboardMarkup(
         ]]
         
     )
+
+DONATE_BUTTON = InlineKeyboardMarkup(
+    
+        [[
+        InlineKeyboardButton('Donate To Owner' ,url='https://t.me/bughunter0'),
+        ],
+        [
+        InlineKeyboardButton('ABOUT',callback_data='cbabout'),
+        InlineKeyboardButton('HELP',callback_data='cbhelp')
+        ],
+        [InlineKeyboardButton('➕ ADD ME TO A GROUP ➕', url="t.me/ThanksMembers_Bot?startgroup=true")
+        ]]
+        
+    )
+
 CLOSE_BUTTON = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('🔙 Back',callback_data='cbclose'),
@@ -157,6 +185,30 @@ async def start_group(bot, update):
         reply_markup=reply_markup,
         quote=True
     )
+    
+    
+@bughunter0.on_message(filters.command(["donate"]) & filters.private)
+async def start_private(bot, update):
+    text = DONATE_STRING_PRIVATE.format(update.from_user.mention)
+    reply_markup = DONATE_BUTTON
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup,
+        quote=True
+    )
+
+@bughunter0.on_message((filters.command(["donate"]) & filters.group) | filters.regex("/report@ThanksMembers_Bot"))
+async def start_group(bot, update):
+    text = DONATE_STRING_GROUP.format(update.chat.title)
+    reply_markup = DONATE_BUTTON
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup,
+        quote=True
+    )
+   
     
 @bughunter0.on_message(filters.command(["ping"]))
 async def ping(bot, message):
