@@ -110,7 +110,6 @@ DONATE_BUTTON = InlineKeyboardMarkup(
         InlineKeyboardButton('Rs 25',url='https://paytm.me/fZ-PsaK'),
         InlineKeyboardButton('Rs 149',url='https://paytm.me/p-tPE0l')
         InlineKeyboardButton('Rs 249',url='https://paytm.me/yoB-s0a')
-
         ],
         [InlineKeyboardButton('➕ ADD ME TO A GROUP ➕', url="t.me/ThanksMembers_Bot?startgroup=true")
         ]]
