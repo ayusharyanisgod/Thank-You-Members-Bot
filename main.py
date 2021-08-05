@@ -103,11 +103,14 @@ START_BUTTON = InlineKeyboardMarkup(
 DONATE_BUTTON = InlineKeyboardMarkup(
     
         [[
+            
         InlineKeyboardButton('Donate To Owner' ,url='https://t.me/bughunter0'),
         ],
         [
-        InlineKeyboardButton('ABOUT',callback_data='cbabout'),
-        InlineKeyboardButton('HELP',callback_data='cbhelp')
+        InlineKeyboardButton('Rs 25',url='https://paytm.me/fZ-PsaK'),
+        InlineKeyboardButton('Rs 149',url='https://paytm.me/p-tPE0l')
+        InlineKeyboardButton('Rs 249',url='https://paytm.me/yoB-s0a')
+
         ],
         [InlineKeyboardButton('➕ ADD ME TO A GROUP ➕', url="t.me/ThanksMembers_Bot?startgroup=true")
         ]]
