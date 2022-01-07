@@ -76,8 +76,8 @@ we will try to remove it.
 
 CHANNEL_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/PremiumValleyUpdates'),
-        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/PremiumValleySupport')
+        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/MetaverseNetwork'),
+        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/MetaverseNetwork')
         ]]
     )
 ADDME_BUTTON = InlineKeyboardMarkup(
@@ -88,8 +88,8 @@ ADDME_BUTTON = InlineKeyboardMarkup(
 START_BUTTON = InlineKeyboardMarkup(
     
         [[
-        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/PremiumValleyUpdates'),
-        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/PremiumValleySupport')
+        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/MetaverseNetwork'),
+        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/MetaverseNetwork')
         ],
         [
         InlineKeyboardButton('ABOUT',callback_data='cbabout'),
